@@ -2,13 +2,13 @@
 
 ## What is Acebook?
 
-Acebook is a facebook clone developed using the MERN stack (MongoDB, express.js,
-React & Node), with tailwind CSS used for styling. Acebook starting life as a group
-project whilst on the Makers Software Engineering bootcamp, we were
-provided with a pre-existing codebase. Our task was to get to up-to-speed with
-an unfamiliar project structure and tech stack, before going on to extend its
-functionality. After the project came to a close, I continued to work on the
-project to further extend its function.
+Acebook is a Facebook clone developed using the MERN stack (MongoDB, Express.js
+, React, & Node), with Tailwind CSS used for styling. It started life as a
+group project in the Makers Software Engineering boot camp, where we were
+provided with a small pre-existing codebase. Our task was to get up to speed
+with an unfamiliar project structure and tech stack and then extend it based
+on user requirements. After the project concluded, I continued to work on it
+to further extend its functionality.
 
 ## Techologies used:
 
