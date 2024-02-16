@@ -22,14 +22,14 @@ const loadedProfileInfoMock = {
 };
 
 describe("Intro component renders conditionally", () => {
-  test("When profile belongs to the owner but has no info", () => {
+  test("When Profile belongs to the owner but has no info", () => {
     render(<Intro profileInfo={basicProfileInfoMock} profileOwner={true} />);
 
     expect(screen.getByRole("heading")).toHaveTextContent("Intro");
     expect(screen.getByRole("button", { name: "Add Bio" })).toBeInTheDocument();
-    expect(screen.getByText("June 16, 1999")).toBeInTheDocument();
+    expect(screen.getByText("16 June 1999")).toBeInTheDocument();
     expect(
-      screen.getByRole("button", { name: "Edit details" })
+      screen.getByRole("button", { name: "Edit details" }),
     ).toBeInTheDocument();
   });
 
@@ -42,7 +42,7 @@ describe("Intro component renders conditionally", () => {
     expect(screen.getByText("Makers")).toBeInTheDocument();
     expect(screen.getByText("London")).toBeInTheDocument();
     expect(
-      screen.getByRole("button", { name: "Edit details" })
+      screen.getByRole("button", { name: "Edit details" }),
     ).toBeInTheDocument();
   });
 
@@ -50,14 +50,14 @@ describe("Intro component renders conditionally", () => {
     render(<Intro profileInfo={loadedProfileInfoMock} profileOwner={false} />);
 
     expect(
-      screen.queryByRole("button", { name: "Add Bio" })
+      screen.queryByRole("button", { name: "Add Bio" }),
     ).not.toBeInTheDocument();
     expect(screen.getByText("I love acebook")).toBeInTheDocument();
     expect(screen.getByText("School of hard knocks")).toBeInTheDocument();
     expect(screen.getByText("Makers")).toBeInTheDocument();
     expect(screen.getByText("London")).toBeInTheDocument();
     expect(
-      screen.queryByRole("button", { name: "Edit details" })
+      screen.queryByRole("button", { name: "Edit details" }),
     ).not.toBeInTheDocument();
   });
 });
@@ -85,7 +85,7 @@ describe("Intro component functions", () => {
         profileOwner={true}
         token={mockToken}
         setToken={setTokenMock}
-      />
+      />,
     );
 
     const user = userEvent.setup();
@@ -93,7 +93,7 @@ describe("Intro component functions", () => {
     const addBioBtn = screen.getByRole("button", { name: "Add Bio" });
     await user.click(addBioBtn);
     expect(
-      screen.queryByRole("button", { name: "Add Bio" })
+      screen.queryByRole("button", { name: "Add Bio" }),
     ).not.toBeInTheDocument();
     expect(screen.getByRole("textbox")).toBeInTheDocument();
 
