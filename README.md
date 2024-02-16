@@ -112,3 +112,14 @@ In a new terminal session...
 ; cd frontend
 ; npm run dev
 ```
+
+# Things you could try:
+
+- Sign-up as a user and login
+- Create a post
+- Leave a comment on a post
+- Like a post
+- Visit your profile page
+- Add a profile picture (click the image icon on the profile page)
+- Change your profile picture
+- Sign out
