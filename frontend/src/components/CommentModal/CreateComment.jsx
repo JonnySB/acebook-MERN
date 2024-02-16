@@ -32,9 +32,12 @@ const CreateComment = (props) => {
   };
 
   return (
-    <div role="createCommentDiv" className="border border-gray-200 bg-gray-50">
+    <div
+      role="createCommentDiv"
+      className="my-3 pt-2 pb-0 p-4 border shadow-sm rounded-lg bg-white border border-gray-200"
+    >
       <form onSubmit={handleCreateComment} aria-label="Create New Comment Form">
-        <div className="px-4 py-2 bg-white rounded-t-lg">
+        <div className="px-2 py-2 bg-white rounded-t-lg">
           <textarea
             name="message"
             value={comment}
@@ -45,9 +48,7 @@ const CreateComment = (props) => {
             placeholder="Write a comment..."
             required
           ></textarea>
-        </div>
-        <div className="flex justify-end px-3 py-2 border-t">
-          <div>
+          <div className="flex justify-end px-3 py-2 border-t">
             <button
               role="createCommentSubmitButton"
               type="submit"

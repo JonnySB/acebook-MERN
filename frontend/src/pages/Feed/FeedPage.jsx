@@ -29,20 +29,20 @@ export const FeedPage = () => {
     }
   }, [token]);
 
-  if(!token) {
+  if (!token) {
     return;
   }
 
   const handleLogout = () => {
     window.localStorage.removeItem("token");
     navigate("/");
-  }
+  };
 
   return (
     <>
-    <NavBar userID={userID} handleLogout={handleLogout}/>
+      <NavBar userID={userID} handleLogout={handleLogout} />
       <div className="flex justify-center min-h-screen bg-slate-100 pt-6 pb-10">
-        <div>
+        <div className="max-width-1/2">
           <CreatePost token={token} setToken={setToken} />
           <div role="feed">
             {posts.map((post) => (
