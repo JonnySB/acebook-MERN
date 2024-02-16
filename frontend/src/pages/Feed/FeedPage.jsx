@@ -5,6 +5,7 @@ import { getPosts } from "../../services/posts";
 import Post from "../../components/Post/Post";
 import CreatePost from "../../components/Post/CreatePost";
 import NavBar from "../../components/NavBar/NavBar";
+import "./FeedPage.css";
 
 export const FeedPage = () => {
   const [posts, setPosts] = useState([]);
@@ -42,7 +43,7 @@ export const FeedPage = () => {
     <>
       <NavBar userID={userID} handleLogout={handleLogout} />
       <div className="flex justify-center min-h-screen bg-slate-100 pt-6 pb-10">
-        <div className="max-width-1/2">
+        <div className="dynamic-half-page">
           <CreatePost token={token} setToken={setToken} />
           <div role="feed">
             {posts.map((post) => (

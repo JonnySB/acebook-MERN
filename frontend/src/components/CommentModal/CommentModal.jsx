@@ -41,7 +41,7 @@ const CommentModal = (props) => {
       {commentModal && (
         <div className="modal">
           <div className="overlay flex justify-center pt-0 pb-10">
-            <div className="max-width-1/2 modal-content self-center my-3 pt-2 pb-0 p-4 border shadow-sm rounded-lg bg-white border border-gray-200 overflow-hidden">
+            <div className="dynamic-half-page modal-content self-center my-3 pt-2 pb-0 p-4 border shadow-sm rounded-lg bg-white border border-gray-200 overflow-hidden">
               <div className="absolute top-1.5 right-1.5">
                 <button onClick={toggleCommentModal}>
                   <svg
@@ -61,7 +61,7 @@ const CommentModal = (props) => {
                   </svg>
                 </button>
               </div>
-              <div className="">
+              <div className="padding">
                 <Post
                   userID={props.userID}
                   post={props.post}
