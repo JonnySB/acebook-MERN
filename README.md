@@ -3,13 +3,12 @@
 ## What is Acebook?
 
 Acebook is a facebook clone developed using the MERN stack (MongoDB, express.js,
-React & Node), with tailwind used for styling. Starting life as a group
-project undertaken whilst on the Makers Software Engineering bootcamp, we were
-provided with a small pre-existing codebase to extend, allowing our group to
-practice getting up-to-speed with someone else's project structure, code and
-unfamiliar technology. We went on to extend the site's functionality, and after
-the project came to a close, I continued to work on the project to further
-extend its function.
+React & Node), with tailwind CSS used for styling. Acebook starting life as a group
+project whilst on the Makers Software Engineering bootcamp, we were
+provided with a pre-existing codebase. Our task was to get to up-to-speed with
+an unfamiliar project structure and tech stack, before going on to extend its
+functionality. After the project came to a close, I continued to work on the
+project to further extend its function.
 
 ## Techologies used:
 
@@ -23,23 +22,22 @@ extend its function.
 
 - MongoDB database architecture and design
 - Model View Controler (MVC) design pattern
-- Cloud image hosting
+- MongoDB
+- Express.js
 - React component design and state management
+- Cloud image hosting
+- Creating modals
 - TDD (React Testing Library)
 
 ## Setup
 
 ### Install Node.js
 
-If you haven't already, make sure you have node and NVM installed.
-
 1. Install Node Version Manager (NVM)
    ```
    brew install nvm
    ```
-2. Open a new terminal
-3. Install the latest version of [Node.js](https://nodejs.org/en/), (`20.5.0` at
-   time of writing).
+2. Install the latest version of [Node.js](https://nodejs.org/en/)
    ```
    nvm install 20
    ```
@@ -83,9 +81,6 @@ VITE_BACKEND_URL="http://localhost:3000"
 
 Create a file `api/.env` with the following contents:
 
-_NOTE - for full image uploading functionality, you will need to create a free
-[cloudinary]{https://cloudinary.com/} account and update the commented out details below._
-
 ```
 MONGODB_URL="mongodb://0.0.0.0/acebook"
 NODE_ENV="development"
@@ -96,9 +91,9 @@ JWT_SECRET="secret"
 # CLOUDINARY_BASE_URL = "https://res.cloudinary.com/<INSERT CLOUD NAME>/image/upload/"
 ```
 
-Note - this is a free service that
+**NOTE - you will need to create a [cloudinary](https://cloudinary.com/) account for image uploads to work correctly.**
 
-For an explanation of these environment variables, see the documentation.
+Once you have created an account, please update the details above.
 
 ### Run the server and use the app
 
