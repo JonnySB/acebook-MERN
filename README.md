@@ -1,6 +1,6 @@
 # Acebook MERN
 
-![acebook-overview](./gifs/acebook-overview.gig)
+![acebook-overview](./gifs/acebook-overview.gif)
 
 ## What is Acebook?
 
@@ -118,16 +118,16 @@ In a new terminal session...
 # Things you could try:
 
 - Sign-up as a user and login
-  ![sign-up-and-login](/gifs/acebook-signup-and-login.gig)
+  ![sign-up-and-login](./gifs/acebook-signup-and-login.gig)
 
 - Add a profile picture (click the image icon on the profile page)
-  ![add-profile-pic](/gifs/acebook-add-profile-pic.gif)
+  ![add-profile-pic](./gifs/acebook-add-profile-pic.gif)
 
 - Create a post
-  ![create-post](/gifs/acebook-create-post.gif)
+  ![create-post](./gifs/acebook-create-post.gif)
 
 - Like and comment on a posts
-  ![like-and-comment](/gifs/acebook-like-and-comment.gif)
+  ![like-and-comment](./gifs/acebook-like-and-comment.gif)
 
 - Visit your profile page and update bio information
-  ![update-profile](/gifs/acebooke-update-profile.gif)
+  ![update-profile](./gifs/acebooke-update-profile.gif)
