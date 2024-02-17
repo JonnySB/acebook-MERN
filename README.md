@@ -118,7 +118,7 @@ In a new terminal session...
 # Things you could try:
 
 - Sign-up as a user and login
-  ![sign-up-and-login](./gifs/acebook-signup-and-login.gig)
+  ![sign-up-and-login](./gifs/acebook-signup-and-login.gif)
 
 - Add a profile picture (click the image icon on the profile page)
   ![add-profile-pic](./gifs/acebook-add-profile-pic.gif)
