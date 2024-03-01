@@ -130,4 +130,4 @@ In a new terminal session...
   ![like-and-comment](./gifs/acebook-like-and-comment.gif)
 
 - Visit your profile page and update bio information
-  ![update-profile](./gifs/acebooke-update-profile.gif)
+  ![update-profile](./gifs/acebook-update-profile.gif)
